@@ -1,0 +1,1 @@
+module.exports = validateHobbies = (hobbies) => hobbies.filter(el => (typeof el === "string"));
