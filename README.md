@@ -15,6 +15,8 @@
    - _`npm test`_;
    - _`npm run coverage`_.
 
+Dir _`__tests`_ has files for test App.
+
 After run the App, start Postman to send requests.
 
 - method: get, url: http://localhost:{PORT}/persons, response: Array\<Person> or [].
@@ -24,3 +26,5 @@ After run the App, start Postman to send requests.
 - method: delete, url: http://localhost:{PORT}/persons/:uuid, response: status code 204.
 
 ### PORT=6000, if you don't change in .env.
+
+### Version Node: 16.13.0 LTS!
