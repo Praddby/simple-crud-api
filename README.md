@@ -15,7 +15,7 @@
    - _`npm test`_;
    - _`npm run coverage`_.
 
-Dir _`__tests`_ has files for test App.
+Dir _`__tests__`_ has files for test App.
 
 After run the App, start Postman to send requests.
 
