@@ -11,9 +11,9 @@ const create = (req, res) => {
           reject({code: 400, message: "Error, invalid params request"});
         } else {
           const id = uuidv4();
-          const { name, age, hobbies } = person;
-          const newHobbies = validateHobbies(hobbies);
-          const data = { id, name, age, newHobbies };
+          let { name, age, hobbies } = person;
+          hobbies = validateHobbies(hobbies);
+          const data = { id, name, age, hobbies };
           personApi.create(data);
           resolve(data);
         }

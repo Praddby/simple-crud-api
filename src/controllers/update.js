@@ -16,9 +16,9 @@ const update = async (req, res, id) => {
         } else if (!isExsitId) {
           reject({code: 404, message: `Person with id: ${id} not found`});
         } else {
-          const { name, age, hobbies } = person;
-          const newHobbies = validateHobbies(hobbies);
-          const data = { id, name, age, newHobbies };
+          let { name, age, hobbies } = person;
+          hobbies = validateHobbies(hobbies);
+          const data = { id, name, age, hobbies };
           personApi.update(id, data);
           resolve(data);
         }
