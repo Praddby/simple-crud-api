@@ -17,8 +17,10 @@
 
 After run the App, start Postman to send requests.
 
-- method: get, url: http://localhost:{OUR_PORT}/persons, response: Array\<Person> or [].
-- method: get, url: http://localhost:{OUR_PORT}/persons/:uuid, response: {Person}
-- method: post, url: http://localhost:{OUR_PORT}/persons, request: { name: string, age: number, hobbies: Array\<string> }, response: {Person}
-- method: put, url: http://localhost:{OUR_PORT}/persons/:uuid, request: { name: string, age: number, hobbies: Array\<string> }, response: {Person}
-- method: delete, url: http://localhost:{OUR_PORT}/persons/:uuid, response: status code 204.
+- method: get, url: http://localhost:{PORT}/persons, response: Array\<Person> or [].
+- method: get, url: http://localhost:{PORT}/persons/:uuid, response: {Person}
+- method: post, url: http://localhost:{PORT}/persons, request: { name: string, age: number, hobbies: Array\<string> }, response: {Person}
+- method: put, url: http://localhost:{PORT}/persons/:uuid, request: { name: string, age: number, hobbies: Array\<string> }, response: {Person}
+- method: delete, url: http://localhost:{PORT}/persons/:uuid, response: status code 204.
+
+### PORT=6000, if you don't change in .env.
