@@ -28,3 +28,5 @@ After run the App, start Postman to send requests.
 ### PORT=6000, if you don't change in .env.
 
 ### Version Node: 16.13.0 LTS!
+
+For test status code 500, need uncomment lines №17, 28, 35, 43, 52 in file _`service/personApi.js`_ and repeat requests.
