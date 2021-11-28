@@ -1,4 +1,4 @@
-# simple-crud-api
+# Simple CRUD API
 
 ### To run and test the App:
 
